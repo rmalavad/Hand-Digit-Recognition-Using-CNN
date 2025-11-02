@@ -23,11 +23,12 @@ A simple graphical interface allows users to upload, draw, or capture an image f
 
 | File / Folder | Description |
 |----------------|-------------|
-| `cnn.py` | Defines and trains the CNN model |
-| `train.py` | Handles model training and saving checkpoints |
-| `process_image.py` | Performs image preprocessing using OpenCV |
-| `main.py` | GUI application entry point |
-| `images/` | Sample handwritten digit images for training and testing |
+| `cnn.py` | Defines and trains the CNN model, with checkpoint save/restore functions. |
+| `train.py` | Runs model training and saves weights to `checkpoint_files/`. |
+| `process_image.py` | Loads the trained model, preprocesses images via OpenCV, and predicts digits. |
+| `main.py` | Launches the PyGTK GUI for upload, camera, or gesture-based input. |
+| `checkpoint_files/` | Stores saved TensorFlow checkpoints. |
+| `images/` | Contains sample training images and UI background assets. |
 
 ---
 
